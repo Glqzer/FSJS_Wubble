@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>WakeUpTimes App</title>
-  </head>
-  <body>
-    <h1>WakeUpTimes App</h1>
-    <p>
-      A sleep cycle lasts about 90 minutes, and a good night's sleep consists of
-      5-6 sleep cycles.
-    </p>
-    <p>
-      If you wake up in the middle of a sleep cycle, you will feel groggy, even
-      if you've completed several cycles prior to waking up.
-    </p>
-    <p>If you go to bed now, when should you wake up?</p>
-    <button>Calculate</button>
-  </body>
+
+<head>
+  <title>WakeUpTimes App</title>
+  <style>
+    body {
+      font-size: 16px;
+      font-family: "Comic Sans MS", sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    #calc-btn {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+    }
+
+    #calc-btn:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .cycle {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #333;
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>WakeUpTimes App</h1>
+  <p>
+    A sleep cycle lasts about 90 minutes, and a good night's sleep consists of
+    5-6 sleep cycles.
+  </p>
+  <p>
+    If you wake up in the middle of a sleep cycle, you will feel groggy, even
+    if you've completed several cycles prior to waking up.
+  </p>
+  <p>If you go to bed now, when should you wake up?</p>
+  <button id="calc-btn">Calculate</button>
+  <script src="index.js"></script>
+
+  <p>
+    If you go to bed right now<sup>*</sup>, try to wake up at one of these times:
+  </p>
+  <div id="wakeup-hours-div" class="wakeup-hours">
+  </div>
+  <p>
+    <sup>*</sup>It takes the average human fourteen minutes to fall asleep.
+  </p>
+
+</body>
+
 </html>
