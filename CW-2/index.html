@@ -1,75 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
   <title>WakeUpTimes App</title>
-  <style>
-    body {
-      font-size: 16px;
-      font-family: "Comic Sans MS", sans-serif;
-      background-color: #f5f5f5;
-      text-align: center;
-      color: #333;
-    }
-
-    h1 {
-      color: red;
-    }
-
-    p {
-      line-height: 1.5;
-    }
-
-    #calc-btn {
-      font-size: 1.5rem;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      border: 1px solid #333;
-      background-color: #fff;
-      color: #333;
-      cursor: pointer;
-    }
-
-    #calc-btn:hover {
-      background-color: #333;
-      color: #fff;
-    }
-
-    .cycle {
-      font-size: 1.5rem;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      border: 1px solid #333;
-      background-color: #fff;
-      color: #333;
-      margin: 0.5rem;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-  <h1>WakeUpTimes App</h1>
-  <p>
-    A sleep cycle lasts about 90 minutes, and a good night's sleep consists of
-    5-6 sleep cycles.
-  </p>
-  <p>
-    If you wake up in the middle of a sleep cycle, you will feel groggy, even
-    if you've completed several cycles prior to waking up.
-  </p>
-  <p>If you go to bed now, when should you wake up?</p>
-  <button id="calc-btn">Calculate</button>
+  <main id="app">
+    <section id="prompt-section">
+      <h1>WakeUpTimes App</h1>
+      <p>
+        A sleep cycle lasts about 90 minutes, and a good night's sleep
+        consists of 5-6 sleep cycles.
+      </p>
+      <p>
+        If you wake up in the middle of a sleep cycle, you will feel groggy,
+        even if you've completed several cycles prior to waking up.
+      </p>
+      <p>If you go to bed now, when should you wake up?</p>
+      <button id="calc-btn">Calculate</button>
+    </section>
+
+    <div id="img-container">
+      <img src="moon.png" alt="Sleep Cycle" />
+    </div>
+
+    <section id="result-section" class="hidden">
+      <div class="button-group">
+        <button id="return-btn">←</button>
+        <button id="refresh-btn">Refresh</button>
+      </div>
+
+      <p>
+        If you go to bed right now<sup>*</sup>, try to wake up at one of these
+        times:
+      </p>
+
+      <div id="wakeup-hours-div" class="wakeup-hours">
+        <div id="cycle-1" class="cycle">12:15 AM</div>
+        <div id="cycle-2" class="cycle">1:45 AM</div>
+        <div id="cycle-3" class="cycle">3:15 AM</div>
+        <div id="cycle-4" class="cycle">4:45 AM</div>
+        <div id="cycle-5" class="cycle">6:15 AM</div>
+        <div id="cycle-6" class="cycle">7:45 AM</div>
+      </div>
+
+      <p>
+        <sup>*</sup>It takes the average human fourteen minutes to fall
+        asleep.
+      </p>
+    </section>
+  </main>
   <script src="index.js"></script>
-
-  <p>
-    If you go to bed right now<sup>*</sup>, try to wake up at one of these times:
-  </p>
-  <div id="wakeup-hours-div" class="wakeup-hours">
-  </div>
-  <p>
-    <sup>*</sup>It takes the average human fourteen minutes to fall asleep.
-  </p>
-
 </body>
 
 </html>

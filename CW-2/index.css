@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: #282828;
+    color: #e5e5e5;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 80%;
+    height: auto;
+    transform: rotate(-25deg);
+  }
+  
+  button {
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background: #996fe5;
+    color: #e5e5e5;
+    font-size: larger;
+  }
+  
+  button:hover {
+    opacity: 90%;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    max-width: 412px;
+    margin: 0 auto;
+    min-height: 100vh;
+    /* padding: 1rem; */
+    background: linear-gradient(#8462bd, #4c0db8);
+    background-repeat: no-repeat;
+    font-size: large;
+  }
+  
+  #prompt-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  #result-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #calc-btn {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+  
+  #refresh-btn {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+  
+  #return-btn {
+    padding: 0.5rem;
+  }
+  
+  #img-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  
+  #wakeup-hours-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .cycle {
+    background-color: #e5e5e5;
+    color: #282828;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: larger;
+  }
+  
+  #cycle-1 {
+    background: #ffb9af;
+  }
+  #cycle-2 {
+    background: #ffdaa3;
+  }
+  #cycle-3 {
+    background: #e5e5e5;
+  }
+  #cycle-4 {
+    background: #b5ffff;
+  }
+  #cycle-5 {
+    background: #87fda1;
+  }
+  #cycle-6 {
+    background: #b1ff8c;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
