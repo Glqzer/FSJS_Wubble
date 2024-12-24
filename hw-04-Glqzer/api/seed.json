@@ -1,0 +1,19 @@
+{
+  "decks": [
+    {
+      "id": 1,
+      "title": "JavaScript Basics",
+      "numberOfCards": 0
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Control Flow",
+      "numberOfCards": 0
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Functions",
+      "numberOfCards": 0
+    }
+  ]
+}

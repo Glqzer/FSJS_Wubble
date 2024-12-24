@@ -1,0 +1,43 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.meme {
+    position: relative;
+    width: 90%;    /* Full viewport width */
+    height: 500px;   /* Fixed height for the meme */
+    background-color: black; /* Black background for letterboxing */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center;     /* Center image vertically */
+    overflow: hidden;        /* Hide overflowing parts of the image */
+    margin: 0 auto; /* Center the meme container horizontally */
+}
+
+.meme-image {
+    max-width: 100%;  /* Ensure image fits horizontally */
+    max-height: 100%; /* Ensure image fits vertically */
+    object-fit: contain; /* Preserve aspect ratio and show black bars if needed */
+}
+
+.top-text, .bottom-text {
+    position: absolute;
+    color: white;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.top-text {
+    top: 10px;
+}
+
+.bottom-text {
+    bottom: 10px;
+}
